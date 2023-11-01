@@ -1,0 +1,85 @@
+/* CSS RESET */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	/* initial is the value set before browsers user agent stylesheet
+    the initial value is set by css specification
+    */
+	border: initial;
+	background-color: initial;
+	/* button element doesnt automatically inherit style */
+	/* need to explicitly set button to inherit style */
+	color: inherit;
+	font: inherit;
+    /* remove default outline */
+    outline: none; /* make sure there is a visual indicator for focus state */
+}
+
+/* BASE STYLES */
+.app {
+	font-family: "Lato", sans-serif;
+	font-size: 15px;
+	color: #fff;
+	height: 100vh;
+	width: 100vw;
+}
+
+/* STYLES */
+
+.header {
+	/* Css treats linear gradients as bg images */
+	background-image: linear-gradient(to right, #18a0be, #622db9);
+	height: 55px;
+	display: flex;
+}
+
+.logo {
+	align-self: center;
+	margin-left: 20px;
+	margin-right: 30px;
+}
+
+.dd-toggle {
+	color: rgba(255, 255, 255, 0.7);
+    padding: 0 13px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.dd-toggle:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+.dd-toggle:focus {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+.dd-toggle:nth-of-type(4) {
+	margin-left: auto;
+}
+
+.dd-toggle:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.dd-toggle__icon {
+}
+
+.dd-toggle__img {
+	height: 30px;
+	width: 30px;
+	/* changing img dimension will alter aspect ratio */
+	/* best practice to use object-fit to get correct aspect ratio */
+	object-fit: cover;
+	border-radius: 50%;
+	margin-right: 7px;
+}
+
+.dd-toggle__text {
+}
