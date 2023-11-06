@@ -27,6 +27,11 @@ button {
 	width: 100vw;
 }
 
+.app__container {
+	height: calc(100vh - 55px);
+	display: flex;
+}
+
 /* KEYFRAMES */
 /* Keyframes are the steps of an animation */
 @keyframes fade-in-from-top {
@@ -99,4 +104,26 @@ button {
 }
 
 .dd-toggle__text {
+}
+
+/* --------------------- */
+/* SIDEBAR */
+
+.sidebar {
+	background-color: #10171A;
+	width: 75px;
+}
+
+/* --------------------- */
+/* PANEL */
+.panel {
+	background-color: #2B363C;
+	width: 350px;
+}
+
+/* --------------------- */
+/* MAIN */
+.main {
+	background-color: #EDF1F3;
+	flex: 1;
 }
