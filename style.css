@@ -150,13 +150,13 @@ button {
 }
 
 .menu__button:hover {
-	background-color: #2B363B;
+	background-color: #2b363b;
 	color: #fff;
 	cursor: pointer;
 }
 
 .menu__button:focus {
-	background-color: #2B363B;
+	background-color: #2b363b;
 	color: #fff;
 	cursor: pointer;
 }
